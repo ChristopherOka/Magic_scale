@@ -14,23 +14,6 @@
 9. Output the remainder if the total cannot be divided exactly into all the weights
 */
 
-
-/*
-Tested numbers:
-(2048, 125, 75, 42, 15, 1) = (16, 0, 1, 0, 6) <- this checks out
-(100, 100, 100, 100, 100, 100) = (1, 0, 0, 0, 0) <- works!
-(1, 100, 100, 100, 100, 100) = (0, 0, 0, 0, 0) R1 <- checks out
-(100, 1, 100, 100, 100, 100) = (100, 0, 0, 0 0) <- works
-(100, 100, 1, 100, 100, 100) = (1, 0, 0, 0, 0) <- works
-(100, 100, 100, 1, 100, 100) = (1, 0, 0, 0, 0) <- works
-(100, 100, 100, 100, 1, 100) = (1, 0, 0, 0, 0) <- works
-(100, 100, 100, 100, 100, 1) = (1, 0, 0, 0, 0) <- works
-(0, 0, 0, 0, 0, 0) = Invalid input
-(-1, -1, -1, -1, -1) = Invalid input
-(100, 200, 200, 200, 200, 5) = (0, 0, 0, 0, 20) <- works
-(100, 99, 100, 100, 100, 100) = (1, 0, 0, 0, 0) R1 <- works
-
-*/
 int balance(int TOTAL_WEIGHT, int WEIGHT1, int WEIGHT2, int WEIGHT3, int WEIGHT4, int WEIGHT5) { //function accepts the total weight, and the 5 other weights
 	int first_division = 0; //declare the stored values of how many weights can go into the large weight
 	int second_division = 0;
